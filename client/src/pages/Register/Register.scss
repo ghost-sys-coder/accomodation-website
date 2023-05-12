@@ -1,0 +1,34 @@
+.register {
+    margin-top: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 700px) {
+        margin-top: 10rem;
+    }
+
+    .form--container {
+
+        h3.text {
+            padding-block: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: left;
+        }
+    }
+    .account {
+        margin-block: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+
+        a {
+            text-transform: capitalize;
+            text-decoration: underline;
+            color: var(--logo-color);
+        }
+    }
+}

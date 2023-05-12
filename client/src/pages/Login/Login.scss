@@ -1,0 +1,110 @@
+section.login {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media screen and (max-width: 700px) {
+        margin-top: 10rem;
+    }
+    .form--container {
+        width: 90%;
+        max-width: 600px;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        padding: 1rem 2rem;
+
+        h3.text {
+            padding-block: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        form {
+            .form--box {
+                height: 50px;
+                border: 1px solid #aaa;
+                border-radius: 5px;
+                padding: .5rem;
+                margin-bottom: 2rem;
+
+                input {
+                    height: 100%;
+                    width: 100%;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-transform: none;
+                    padding-left: 1rem;
+                }
+            }
+
+            button {
+                width: 100%;
+                padding: 1.7rem 2rem;
+                color: var(--white-color);
+                background-color: var(--logo-color);
+                font-size: 1,5rem;
+                text-transform: capitalize;
+                font-weight: 600;
+                cursor: pointer;
+                border-radius: .5rem;
+                margin-bottom: 2rem;
+
+                &:hover {
+                    background-color: var(--black-color);
+                }
+            }
+        }
+
+        p.text {
+            text-align: center;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .social-login-box {
+            width: 100%;
+            display: flex;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            padding: 1rem;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            &:hover {
+                background-color: var(--black-color);
+                color: var(--white-color);
+
+                svg {
+                    color: var(--white-color);
+                }
+            }
+
+            svg {
+                font-size: 2rem;
+                font-weight: 800;
+                color: blue;
+            }
+
+            p {
+                font-size: 1.5rem;
+                text-transform: none;
+            }
+        }
+
+        .account {
+            margin-block: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+
+            a {
+                text-decoration: underline;
+                color: var(--logo-color);
+            }
+        }
+    }
+}

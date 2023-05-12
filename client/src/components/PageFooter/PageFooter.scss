@@ -1,0 +1,92 @@
+section.footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #aaa;
+    background-color: #f6f6f7;
+
+    .footer--grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        gap: 2rem;
+
+        .item {
+            h1 {
+                font-size: 2rem;
+                font-weight: 600;
+                text-transform: capitalize;
+                padding-bottom: 1rem;
+            }
+
+            a {
+                display: block;
+                padding-bottom: 1rem;
+                font-size: 1.2rem;
+                text-transform: none;
+                color: var(--black-color);
+
+                &:hover {
+                    color: var(--logo-color);
+                    transform: translateX(10px);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .copyright--socials {
+        margin-top: 1rem;
+        border-top: 1px solid #aaa;
+        padding-top: 2rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        .copyright {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+
+            p, a {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: var(--black-color);
+                text-transform: capitalize;
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+
+            .language {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                svg {
+                    font-size: 2rem;
+                    color: var(--logo-color);
+                }
+            }
+
+            p, a {
+                font-size: 1.5rem;
+                font-weight: 300;
+                align-self: center;
+                svg {
+                    font-size: 2rem;
+                    color: var(--logo-color);
+                }
+            }
+        }
+    }
+}

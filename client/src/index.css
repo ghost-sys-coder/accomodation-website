@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    --logo-color: #E63259;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 5%;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.form--container {
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+
+}
+.form--box {
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+.error {
+    text-align: center;
+    color: red;
+    text-transform: capitalize;
+    padding-block: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+input:not([type="checkbox"]) {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: none;
+    padding-left: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 1.7rem 2rem;
+    color: var(--white-color);
+    background-color: var(--logo-color);
+    font-size: 1,5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: var(--black-color);
+}
+
+.username {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--logo-color);
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-block: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.image--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.image--grid .image {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image--grid .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+main {
+    padding: 2rem 5%;
+}

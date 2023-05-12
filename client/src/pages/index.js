@@ -1,0 +1,11 @@
+export { default as Home } from "./Home/Home.jsx";
+export { default as Layout } from "./Layout/Layout.jsx";
+export { default as Login } from "./Login/Login.jsx";
+export { default as Register } from "./Register/Register.jsx";
+export { default as Profile } from "./Profile/Profile.jsx";
+export { default as PlacesForm } from "./PlacesForm/PlacesForm.jsx";
+export { default as Places } from "./Places/Places.jsx";
+export { default as SinglePlacePage } from "./SinglePlacePage/SinglePlacePage.jsx";
+export { default as BookingsPage } from "./BookingsPage/BookingsPage.jsx";
+export { default as BookingPage } from "./BookingPage/BookingPage.jsx";
+export { default as SearchResults } from "./SearchResults/SearchResults.jsx";

@@ -1,0 +1,139 @@
+section.bookings--page {
+    
+    .bookings--grid {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 2rem;
+        
+        .grid--item {
+            box-shadow: var(--box-shadow);
+            border-radius: 10px;
+            overflow: hidden;
+            .image {
+                height: 300px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            p {
+                padding-left: 1rem;
+                color: var(--black-color);
+            }
+            p.dates {
+                padding-top: 1rem;
+                font-size: 1.2rem;
+                color: #aaa;
+
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+
+                span {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: .2rem;
+
+                    svg {
+                        color: var(--black-color);
+                    }
+                }
+            }
+
+            p.price {
+                padding-top: .2rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: var(--black-color);
+            }
+
+            p.nights {
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5px;
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                color: #aaa;
+            }
+
+        }
+        .single--item {
+            box-shadow: var(--box-shadow);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 50%;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+
+            .image {
+                height: 300px;
+                width: 100%;
+
+                img {
+                    height: inherit;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            p {
+                padding-left: 1rem;
+                color: var(--black-color);
+            }
+            p.dates {
+                padding-top: 1rem;
+                font-size: 1.2rem;
+                color: #aaa;
+
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+
+                span {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: .2rem;
+
+                    svg {
+                        color: var(--black-color);
+                    }
+                }
+            }
+
+            p.price {
+                padding-top: .2rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: var(--black-color);
+            }
+
+            p.nights {
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5px;
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                color: #aaa;
+            }
+        }
+    }
+}

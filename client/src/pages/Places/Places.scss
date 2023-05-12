@@ -1,0 +1,89 @@
+.places {
+    padding-top: 3rem;
+
+    div.text--center {
+        padding-block: 2rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--black-color);
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.2rem;
+            padding: .5rem 1.5rem;
+            border-radius: 25px;
+            color: var(--white-color);
+            background-color: var(--logo-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--black-color);
+                color: var(--white-color);
+            }
+        }
+    }
+
+    .places--grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+        gap: 2rem;
+
+        .place--item {
+            // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+
+            .image {
+                height: 300px;
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+            .text--content {
+                padding: 2rem 0;
+
+                .title {
+                    font-size: 1.5rem;
+                    text-transform: none;
+                    font-weight: 600;
+                    padding-bottom: 1rem;
+                    color: var(--black-color);
+                }
+
+                .address {
+                    text-transform: none;
+                    color: var(--black-color);
+                    font-weight: 300;
+                    padding-bottom: .5rem;
+                }
+
+                p.description {
+                    font-weight: 400;
+                    text-transform: none;
+                    color: var(--black-color);
+                }
+            }
+        }
+    }
+}

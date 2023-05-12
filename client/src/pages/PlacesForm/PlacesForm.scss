@@ -1,0 +1,166 @@
+.places--form {
+    margin-top: 3rem;
+
+    .form-container {
+        margin-block: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        form {
+        width: 90%;
+        // max-width: 800px;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, .4);
+        border-radius: 10px;
+        padding: 1rem;
+    
+        label, h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            text-align: left;
+            padding-bottom: .5rem;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            display: block;
+        }
+        p.title-desc {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: none;
+            padding-left: 1rem;
+        }
+        input {
+            height: 40px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--black-color);
+            border: 1px solid #aaa;
+            border-radius: 25px;
+            padding-left: 1rem;
+        }
+    
+        .add--link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+    
+            button {
+                position: absolute;
+                width: auto; height: 100%;
+                right: 0; top: 0; bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                padding: 1rem;
+            }
+        }
+    
+        .add-btn {
+            background-color: transparent;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--black-color);
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 2.5rem;
+            margin: 2rem auto 0;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+    
+            &:hover {
+                background-color: var(--black-color);
+                color: var(--white-color);
+            }
+    
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
+        }
+    
+        .image--grid {
+            margin-top: 3rem;
+
+            .image {
+                position: relative;
+                
+                .star {
+                    width: auto;
+                    position: absolute; bottom: 0; left: 2%;
+                    background-color: var(--black-color);
+                    padding: .5rem;
+                    border-radius: 15px;
+    
+                    &:hover {
+                        background-color: red;
+                    }
+    
+                    svg {
+                        font-size: 1.5rem;
+                        color: var(--white-color);
+                        font-weight: 800;
+                    }
+                }
+
+                .icon {
+                    width: auto;
+                    position: absolute; bottom: 0; right: 2%;
+                    background-color: var(--black-color);
+                    padding: .5rem;
+                    border-radius: 15px;
+    
+                    &:hover {
+                        background-color: red;
+                    }
+    
+                    svg {
+                        font-size: 1.5rem;
+                        color: var(--white-color);
+                        font-weight: 800;
+                    }
+                  }
+            }
+            
+        }
+    
+        .perks--grid {
+            margin-top: 2rem;
+    
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+    
+            label {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 1rem;
+    
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+    
+                svg {
+                    font-size: 2rem;
+                }
+                @media screen and (max-width: 700px) {
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    
+       button {
+        border-radius: 25px;
+       }
+     }
+    }
+}

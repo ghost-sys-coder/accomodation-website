@@ -1,0 +1,123 @@
+section.empty {
+    min-height: 300px;
+}
+
+section {
+    background-color: var(--white-color);
+    
+    h1.heading {
+        font-size: 2.5rem;
+        padding-block: 1rem;
+        color: var(--logo-color);
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .search--results-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        gap: 2rem;
+
+       .item {
+        .image {
+            position: relative;
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            } 
+
+            svg {
+                position: absolute;
+                top: 10px; right: 10px;
+                font-size: 3rem;
+                font-weight: 300;
+                cursor: pointer;
+                color: var(--logo-color);
+            }
+        }
+
+        h1.title {
+            padding-bottom: 1rem;
+            font-size: 1.4rem;
+            color: var(--black-color);
+        }
+
+        p.desc {
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding-bottom: .5rem;
+            color: var(--black-color);
+        }
+
+        p.price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--black-color);
+
+            span {
+                font-weight: 500;
+                font-size: 1.5rem;
+                color: var(--black-color);
+            }
+        }
+       }
+    }
+
+    .single--item {
+        .item {
+            width: 400px;
+            .image {
+                position: relative;
+                height: 250px;
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                margin-bottom: 1rem;
+    
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                } 
+    
+                svg {
+                    position: absolute;
+                    top: 10px; right: 10px;
+                    font-size: 3rem;
+                    font-weight: 300;
+                    cursor: pointer;
+                    color: var(--logo-color);
+                }
+            }
+    
+            h1.title {
+                padding-bottom: 1rem;
+                font-size: 1.4rem;
+            }
+    
+            p.desc {
+                font-size: 1.2rem;
+                font-weight: 400;
+                padding-bottom: .5rem;
+                color: var(--black-color);
+            }
+    
+            p.price {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--black-color);
+    
+                span {
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    color: var(--black-color);
+                }
+            }
+           }
+    }
+}

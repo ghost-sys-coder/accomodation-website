@@ -1,0 +1,42 @@
+nav {
+    // margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .nav--link {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: none;
+        color: var(--black-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+
+        @media screen and (max-width: 700px){
+            width: 100%;
+        }
+
+        svg {
+            font-weight: 800;
+        }
+    }
+
+    .active {
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        background-color: var(--logo-color);
+        color: var(--white-color);
+    }
+
+    .inactive {
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        background-color: #aaa;
+        color: var(--white-color); 
+    }
+}
